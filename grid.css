@@ -27,7 +27,83 @@
     .photography {
         flex-direction: column;
     }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .menu > li {
+        margin-top: 15px;
+    }
+    .nav-mobile-menu {
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+    .nav-mobile-menu span {
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 0.25s ease-in-out;
+    }
+    .nav-mobile-menu span:first-child {
+        top: 5px;
+    }
+    .nav-mobile-menu span:nth-child(2) {
+        top: 12px;
+    }
+    .nav-mobile-menu span:last-child {
+        bottom: 5px;
+    }
 
+
+    .nav-mobile-menu.active-menu span:first-child {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .nav-mobile-menu.active-menu span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    .nav-mobile-menu.active-menu span:last-child {
+        transform: scale(0);
+    }
+    
+    .menu-wrap {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 320px;
+        width: 320px;
+        transform: translateX(150%);
+        background-color: rgba(30,30,30,0.6)
+    }
+    .menu-wrap.active-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 20%;
+        left: 10%;
+        bottom: 25%;
+        right: 10%;
+        width: 100%;
+        padding: 30px;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu-wrap.menu-wrap.active-menu a{
+        color: white;
+        font-size: 20px;
+    }
+   
 }
 
 /* tablet */
@@ -51,37 +127,11 @@
         flex: 0 0 41.66665%;
         max-width: 41.66665%;
     }
-    .col-sm-1 {
-        flex: 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
     .col-sm-4 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
     .col-sm-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .col-sm-12 {
-        flex:0 0 100%;
-        max-width: 100%;
-    }
-}
-/* laptop */
-@media (min-width:992px) {
-    .conteiner {
-        max-width: 960px;
-    }
-    .col-md-3 {
-        flex:0 0 25%;
-        max-width: 25%;
-    }
-    .col-md-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
