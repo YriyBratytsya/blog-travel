@@ -10,6 +10,7 @@ img {
 } 
 a {
     text-decoration: none;
+    color: black;
 }
 .header {
     position: sticky;
@@ -81,6 +82,7 @@ a {
 /* section-logotype */
 .logotype {
     background-image: url(images/main-image.webp);
+    background-size:cover;
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,5 +102,219 @@ a {
     font-weight: 700;
     font-size: 80px;
     margin-left: 20px;
+    mix-blend-mode: overlay;
 }
+/* travels */
+
+.paragraf {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pictures-background {
+    height: 260px;
+    background-image: url(images/travel.webp);
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pictures-background2 {
+    background-image: url(images/eat.webp);
+}
+.pictures-background3 {
+background-image: url(images/relax.webp);
+}
+.pictures-background a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 120px;
+    background-color: white;
+    color: blue;
+}
+.pictures-background a:hover {
+    background-color: blue;
+    color: white;
+    transition: 0.35s ease-in-out;
+}
+
+/* blog-post */
+
+.article {
+    border: 1px solid gray;
+    margin-top: 50px;
+}
+.admin-name {
+    margin:30px;
+    display: flex;
+}
+.admin-name > div {
+    margin-left: 20px;
+}
+.admin h2 {
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.admin>p {
+    margin-left: 50px;
+    margin-right: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+.admin a:hover {
+    color: blue;
+}
+.likes {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.sent {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.likes a:hover {
+    color: blue;
+}
+.heart:hover{
+    background-image: url(images/heart2.png);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+}
+/* social */
+.social {
+    background-color: rgb(78, 78, 237);
+    display: flex;
+}
+.instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.instagram a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+/* photography */
+.photography {
+    display: flex;
+}
+.photo {
+    position: relative;
+}
+.about {
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.photo:hover .about {
+    display: flex;
+    font-size: 20px;
+   
+}
+.about > a {
+    display: block;
+}
+
+/* footer */
+footer {
+    background-color: gray;
+    padding: 20px;
+    color: white;
+}
+footer a {
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+.about-me div {
+    float: left;
+    margin-right: 50px;
+}
+.about-me div::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.about-me h3 {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+.about-me  p {
+    margin-bottom: 25px;
+}
+.footer {
+    margin-top: 100px;
+}
+.footer p {
+    font-size: 12px;
+    display: inline;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+.subscribe h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.subscribe input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: gray;
+    width: 220px;
+    height: 40px;
+    border: 1px solid white;
+}
+.subscribe input::placeholder {
+    color: white;
+    text-align: center;
+}
+.subscribe input:focus {
+    outline: none;
+    padding: 20px;
+    border: 3px solid white;
+}
+.subscribe > a {
+    display: block;
+    width: 220px;
+    height: 40px;
+    border: none;
+    background-color:  rgb(78, 78, 237);
+    text-align: center;
+    line-height: 40px;
+}
+.footer2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer2 a {
+    border: none;
+}
+
 

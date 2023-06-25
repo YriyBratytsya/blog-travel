@@ -19,6 +19,17 @@
     max-width: 50%;
 }
 
+/* only mobile */
+@media(max-width:767px) {
+    .social {
+        flex-direction: column;
+    }
+    .photography {
+        flex-direction: column;
+    }
+
+}
+
 /* tablet */
 @media (min-width:768px) {
     .conteiner {
@@ -33,8 +44,8 @@
         max-width: 58.33333%;
     }
     .col-sm-2 {
-        flex:0 0 16.66667%;
-        max-width: 16.66667%;
+        flex:0 0 20%;
+        max-width: 20%;
     }
     .col-sm-5 {
         flex: 0 0 41.66665%;
